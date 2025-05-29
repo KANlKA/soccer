@@ -1,40 +1,46 @@
-# Soccer Project
+# ⚽ Soccer Project
 
-## Overview
-
-This project is a soccer data application that utilizes the [Football Data API v4](https://api.football-data.org/v4) to fetch and display football-related data. It is structured with a clear separation between backend and frontend components.
+A full-stack web application that delivers live and historical soccer data using the [Football Data API v4](https://api.football-data.org/v4). The project is cleanly architected with **backend** and **frontend** separation, offering an interactive, visually rich experience for football enthusiasts.
 
 ---
 
 ## API Used
 
-The core data for this project is powered by the Football Data API:
+All football data in this app is powered by the robust [Football Data API](https://api.football-data.org/v4), enabling access to:
+
+- Live & scheduled matches
+- Standings and statistics
+- Teams, squads, and more
+
 ---
 
 ## Backend
 
-- **Technology:** Node.js, Express
-- **Purpose:** Handles all API requests to the Football Data API, processes the data, and exposes endpoints for the frontend.
-- **Key Responsibilities:**
-  - Securely manages the API key for `football-data.org`
-  - Fetches and processes football data (matches, standings, teams, etc.)
-  - Provides RESTful endpoints for frontend consumption
-  - Handles any backend logic such as data transformation or caching if implemented
+- **Stack:** Node.js, Express
+- **Purpose:** Acts as a secure middle layer between the Football Data API and the frontend.
+- **Responsibilities:**
+  - Manages and protects the API key for [football-data.org](https://football-data.org)
+  - Fetches, processes, and transforms football data (matches, standings, teams, etc.)
+  - Exposes clean RESTful endpoints for the frontend
+  - Handles backend logic such as data transformation or caching (if implemented)
+
+---
 
 ## Frontend
 
-- **Technology:** React+Javascript
-- **Purpose:** Provides a user interface to interact with the backend and display football data visually.
-- **Key Features:**
+- **Stack:** React + JavaScript
+- **Purpose:** Presents an intuitive and interactive user interface for exploring football data.
+- **Features:**
   - Fetches football data from the backend
-  - Displays leagues, matches, team details, standings, etc.
-  - Interactive UI with visuals (see screenshots below)
-  - Error handling and loading states for API requests
+  - Visualizes leagues, matches, team details, standings, and more
+  - Responsive UI with engaging visuals (see screenshots)
+  - Robust error handling and loading states for API requests
+
 ---
 
 ## Screenshots
 
-Below are some screenshots showcasing the application:
+Explore the UI in action:
 
 ![Screenshot 2025-05-29 220550](https://github.com/user-attachments/assets/2721a857-5fe9-42b7-9df3-62a8778ca446)
 ![Screenshot 2025-05-29 220603](https://github.com/user-attachments/assets/93e2ab70-9f78-4933-a845-75adfe584bf1)
@@ -45,21 +51,8 @@ Below are some screenshots showcasing the application:
 ## Getting Started
 
 ### Prerequisites
-- Football Data API key from [football-data.org](https://www.football-data.org/client/register)
 
-### Setup
-
-#### Backend
-
-1. Clone the repository
-2. Set up environment variables (API key, etc.)
-3. Install dependencies
-4. Run the backend server
-
-#### Frontend
-
-1. Navigate to the frontend directory
-2. Install dependencies
-3. Run the frontend development server
+- A Football Data API key ([register here](https://www.football-data.org/client/register))
+- Node.js and npm installed
 
 ---
